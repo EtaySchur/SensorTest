@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinearAcceleretionActivity" >
+
+     <TextView
+         android:id="@+id/xCord"
+         android:layout_width="wrap_content"
+         android:layout_height="60dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:background="#666666"
+         android:ems="10" />
+      <TextView
+         android:id="@+id/yCord"
+         android:layout_width="wrap_content"
+         android:layout_height="60dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/xCord"
+         android:background="#777777"
+         android:ems="10" />
+     <TextView
+         android:id="@+id/zCord"
+         android:layout_width="wrap_content"
+         android:layout_height="60dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/yCord"
+         android:background="#888888"
+         android:ems="10" />
+
+     <Button
+         android:id="@+id/PressureButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/AzymuthSensorButton"
+         android:layout_marginTop="44dp"
+          android:onClick="startPressureSensor"
+         android:text="@string/startPressureSensor" />
+
+     <Button
+         android:id="@+id/LightSensorButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/PressureButton"
+         android:layout_alignBottom="@+id/PressureButton"
+         android:layout_alignParentLeft="true"
+         android:onClick="startLightSensor"
+         android:text="@string/startLightSensor" />
+
+     <Button
+         android:id="@+id/startAccelSensorButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignRight="@+id/LightSensorButton"
+         android:layout_centerVertical="true"
+         android:onClick="startAccelSensor"
+         android:text="@string/startAccelSensor" />
+
+     <Button
+         android:id="@+id/AzymuthSensorButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/startAccelSensorButton"
+         android:layout_alignBottom="@+id/startAccelSensorButton"
+         android:layout_alignParentRight="true"
+         android:onClick="startAzymuthSensor"
+         android:text="@string/startAzymuthSensor" />
+
+     <Button
+         android:id="@+id/MagneticSensorButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignRight="@+id/LightSensorButton"
+         android:layout_below="@+id/LightSensorButton"
+         android:layout_marginTop="29dp"
+         android:onClick="startMagneticSensor"
+         android:text="@string/startMagneticSensor" />
+</RelativeLayout>

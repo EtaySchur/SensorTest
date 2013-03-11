@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerateQRCode" >
+
+    <EditText
+        android:id="@+id/editCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        android:hint="@string/edit_code" 
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+         android:id="@+id/showQRCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editCode"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="74dp"
+        android:onClick="showQRCode"
+        android:text="@string/showQRCode" />
+
+</RelativeLayout>

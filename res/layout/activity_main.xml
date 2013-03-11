@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/GenerateCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/QRscan"
+        android:onClick="generateQRcode"
+        android:text="@string/edit_code" />
+
+    <Button
+        android:id="@+id/QRscan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:onClick="startQrScan"
+        android:text="@string/QR_Scan" />
+
+    <Button
+        android:id="@+id/Sensors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/GenerateCode"
+        android:onClick="Sensor"
+        android:text="@string/Sensor" />
+
+   
+
+</RelativeLayout>
